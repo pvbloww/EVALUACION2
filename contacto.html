@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto - Veterinaria San Marcos</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">🐾</span>
+        Veterinaria San Marcos
+      </a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="login.html">Iniciar sesión</a>
+        <a href="registro.html">Registrar usuario</a>
+        <a href="carrito.html" class="cart-link">🛒 Cart (<span class="contador-carrito">0</span>)</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <section class="card card-form" aria-label="Formulario de contacto">
+      <h2>Formulario de contacto</h2>
+      <p class="ayuda">¿Tienes dudas sobre nuestros servicios? Escríbenos.</p>
+
+      <p id="mensaje-resultado" class="alerta alerta-exito" style="display:none;">
+        Tu mensaje fue enviado correctamente (demostración).
+      </p>
+
+      <form id="form-contacto" novalidate>
+        <div class="campo">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" maxlength="100" required />
+          <p class="mensaje-error" role="alert"></p>
+        </div>
+
+        <div class="campo">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" maxlength="100" required autocomplete="email" />
+          <small class="ayuda">Solo correos @duoc.cl, @profesor.duoc.cl o @gmail.com.</small>
+          <p class="mensaje-error" role="alert"></p>
+        </div>
+
+        <div class="campo">
+          <label for="comentario">Comentario</label>
+          <textarea id="comentario" name="comentario" rows="4" maxlength="500" required></textarea>
+          <small class="ayuda">Máximo 500 caracteres.</small>
+          <p class="mensaje-error" role="alert"></p>
+        </div>
+
+        <button class="btn btn-primario btn-bloque" type="submit">Enviar mensaje</button>
+      </form>
+    </section>
+
+    <section aria-label="Ubicación de la clínica">
+      <div class="seccion-titulo mt-2">
+        <h2>Encuéntranos</h2>
+        <p>Rancagua, Región del Libertador General Bernardo O'Higgins.</p>
+      </div>
+      <div class="mapa-wrapper">
+        <iframe
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-70.7600%2C-34.1900%2C-70.6900%2C-34.1500&layer=mapnik&marker=-34.1708%2C-70.7444"
+          title="Mapa de ubicación de Veterinaria San Marcos en Rancagua"
+          loading="lazy">
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      &copy; <span class="anio-actual"></span> Veterinaria San Marcos. Proyecto académico DSY1104.
+    </div>
+  </footer>
+
+  <script src="js/carrito.js"></script>
+  <script src="js/productos.js"></script>
+  <script src="js/validaciones.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
