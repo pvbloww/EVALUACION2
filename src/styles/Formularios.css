@@ -1,0 +1,18 @@
+.form-tarjeta { max-width: 480px; margin: 0 auto; padding: 1.6rem; background: #fff; border: 1px solid #dfe7e3; border-radius: 12px; box-shadow: 0 4px 14px rgb(32 89 66 / 8%); }
+.form-tarjeta-ancha { max-width: 620px; }
+.form-tarjeta h1 { color: #205942; margin: 0 0 0.75rem; font-size: 1.75rem; }
+.form-tarjeta > .imagen-contenido, .form-tarjeta > .imagen-pendiente { margin-bottom: 1rem; }
+.form-campo { margin-bottom: 1rem; }
+.form-campo label { display: block; font-weight: 600; margin-bottom: 0.3rem; font-size: 0.9rem; }
+.form-campo input, .form-campo select, .form-campo textarea { width: 100%; min-width: 0; padding: 0.6rem 0.7rem; border: 1px solid #dfe7e3; border-radius: 8px; font: inherit; font-size: 0.95rem; background: #fff; }
+/* Al enfocar un campo conserva el borde neutro, sin resplandor verde. */
+input:focus, select:focus, textarea:focus { outline: none !important; box-shadow: none !important; border-color: #ced4da !important; }
+.form-campo select:disabled { background: #f1f4f2; }
+.form-ayuda { display: block; color: #5a6b64; font-size: 0.8rem; }
+.form-error { display: block; color: #b02b1d; font-size: 0.82rem; margin: 0.25rem 0 0; }
+.form-campo-invalido input, .form-campo-invalido select, .form-campo-invalido textarea { border-color: #b02b1d; }
+.form-fila { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 1rem; }
+.form-aviso { padding: 0.8rem 1rem; border-radius: 8px; margin: 1rem 0; background: #eaf3ee; color: #205942; border: 1px solid #b9e0cb; font-size: 0.9rem; }
+.form-pie { text-align: center; margin-top: 1rem; font-size: 0.9rem; }
+.form-boton { width: 100%; }
+@media (max-width: 600px) { .form-fila { grid-template-columns: minmax(0, 1fr); gap: 0; } .form-tarjeta { padding: 1.1rem; } }

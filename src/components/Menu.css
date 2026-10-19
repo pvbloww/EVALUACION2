@@ -1,0 +1,41 @@
+.menu .menu-marca {
+  color: #205942;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.menu-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background: #2f7a5f;
+  font-size: 1.2rem;
+}
+
+.menu .nav-link {
+  color: #23312c;
+}
+
+.menu .menu-cuenta .nav-link {
+  color: #2f7a5f;
+  font-size: 0.9rem;
+}
+
+.menu .menu-cuenta .nav-link:last-child {
+  color: #23312c;
+}
+
+.menu .nav-link.active,
+.menu .nav-link:hover {
+  color: #2f7a5f;
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
+.menu .nav-link:focus-visible {
+  outline: 2px solid #2f7a5f;
+  outline-offset: 2px;
+}

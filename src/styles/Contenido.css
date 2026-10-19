@@ -1,0 +1,22 @@
+.v-pagina { max-width: 1200px; margin: 0 auto; line-height: 1.55; }
+.v-pagina h1 { font-size: clamp(1.65rem, 3vw, 2.1rem); font-weight: 700; }
+.v-pagina h2 { color: #205942; font-size: 1.5rem; font-weight: 650; }
+.v-titulo { text-align: center; margin-bottom: 1.6rem; }
+.v-titulo p { color: #5a6b64; }
+.v-seccion { margin-top: 2.5rem; }
+.v-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(230px, 100%), 1fr)); gap: 1.2rem; }
+.v-card { background: #fff; border: 1px solid #dfe7e3; border-radius: 12px; box-shadow: 0 4px 14px rgb(32 89 66 / 8%); overflow: hidden; display: flex; flex-direction: column; }
+.v-card-info { padding: 1.1rem; display: flex; flex-direction: column; flex-grow: 1; gap: 0.6rem; }
+.v-card-info .v-boton { margin-top: auto; }
+.v-card-centro { text-align: center; padding: 1.2rem; }
+.v-card-centro h3 { font-size: 1.1rem; font-weight: 650; margin-top: 0.8rem; }
+/* El emoji de cada beneficio queda centrado en un círculo claro. */
+.v-card-centro .imagen-contenido, .v-card-centro .imagen-pendiente { width: 100px; aspect-ratio: 1; border-radius: 50%; margin: 0 auto; font-size: 2rem; }
+.v-boton { display: inline-block; border: 1px solid #2f7a5f; border-radius: 12px; padding: 0.6rem 1.2rem; font-size: 0.95rem; font-weight: 600; text-align: center; text-decoration: none; cursor: pointer; background: #2f7a5f; color: #fff; }
+.v-boton:hover { background: #205942; color: #fff; }
+.v-boton-secundario { background: #fff; color: #2f7a5f; }
+.v-boton:focus-visible { outline: 3px solid #2f7a5f; outline-offset: 3px; }
+.v-centrado { text-align: center; }
+.v-migas { color: #5a6b64; font-size: 0.85rem; margin-bottom: 1rem; }
+.v-migas a, .v-enlace { color: #2f7a5f; }
+.v-migas span { margin: 0 0.35rem; }

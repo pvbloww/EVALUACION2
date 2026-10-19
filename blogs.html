@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blogs - Veterinaria San Marcos</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">🐾</span>
+        Veterinaria San Marcos
+      </a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="blogs.html" aria-current="page">Blogs</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="login.html">Iniciar sesión</a>
+        <a href="registro.html">Registrar usuario</a>
+        <a href="carrito.html" class="cart-link">🛒 Cart (<span class="contador-carrito">0</span>)</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <div class="seccion-titulo">
+      <h1>Noticias importantes</h1>
+      <p>Datos curiosos y consejos para el cuidado de tu mascota.</p>
+    </div>
+
+    <div class="grid">
+      <article class="card">
+        <div class="placeholder-img">Caso curioso #1</div>
+        <div class="info">
+          <h2>¿Cada cuánto debo vacunar a mi perro?</h2>
+          <p>
+            Muchos dueños no saben que algunas vacunas requieren refuerzo anual.
+            Te contamos cómo funciona el calendario de vacunación canino.
+          </p>
+          <a class="btn btn-secundario" href="detalle-blog1.html">Ver caso</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="placeholder-img">Caso curioso #2</div>
+        <div class="info">
+          <h2>Señales de que tu gato necesita una consulta urgente</h2>
+          <p>
+            Los gatos suelen esconder el dolor. Aprende a identificar señales
+            tempranas de alerta en tu mascota felina.
+          </p>
+          <a class="btn btn-secundario" href="detalle-blog2.html">Ver caso</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      &copy; <span class="anio-actual"></span> Veterinaria San Marcos. Proyecto académico DSY1104.
+    </div>
+  </footer>
+
+  <script src="js/carrito.js"></script>
+  <script src="js/productos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

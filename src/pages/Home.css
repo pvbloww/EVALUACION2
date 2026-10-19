@@ -1,0 +1,4 @@
+.home-hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 2rem; align-items: center; background: linear-gradient(120deg, #eaf3ee, #fdf3e2); border-radius: 12px; padding: 2rem; }
+.home-hero h1 { color: #205942; margin-bottom: 0.6rem; }
+.home-hero p { color: #5a6b64; margin-bottom: 1.2rem; }
+@media (max-width: 780px) { .home-hero { grid-template-columns: minmax(0, 1fr); padding: 1.25rem; } }

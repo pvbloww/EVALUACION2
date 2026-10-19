@@ -1,0 +1,18 @@
+.imagen-contenido,
+.imagen-pendiente {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 12px;
+}
+.imagen-contenido { object-fit: cover; }
+.imagen-pendiente {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: repeating-linear-gradient(45deg, #e4ece8, #e4ece8 10px, #dbe6e0 10px, #dbe6e0 20px);
+  color: #5a6b64;
+  text-align: center;
+  font-size: 0.85rem;
+  padding: 0.5rem;
+}

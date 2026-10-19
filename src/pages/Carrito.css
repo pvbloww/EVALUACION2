@@ -1,0 +1,28 @@
+.carrito-vacio { text-align: center; padding: 3rem 1rem; color: #5a6b64; }
+.carrito-icono { display: block; font-size: 3rem; margin-bottom: 1rem; }
+.carrito-layout { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(280px, .8fr); gap: 1.5rem; align-items: start; }
+.carrito-lista { display: grid; gap: 1rem; }
+.carrito-item, .carrito-resumen { display: flex; gap: 1rem; align-items: center; padding: 1rem; background: white; border: 1px solid #dfe7e3; border-radius: .9rem; box-shadow: 0 4px 14px rgba(32, 89, 66, .06); }
+.carrito-imagen { width: 110px; aspect-ratio: 1; object-fit: contain; background: #fff; }
+.carrito-detalle { display: grid; flex: 1; gap: .35rem; }
+.carrito-detalle h2 { font-size: 1rem; margin: 0; }
+.carrito-detalle label, .carrito-resumen label { display: grid; gap: .3rem; }
+.carrito-detalle input { width: 5rem; }
+.carrito-resumen { display: grid; position: sticky; top: 6rem; }
+.carrito-resumen h2 { font-size: 1.25rem; }
+.carrito-resumen input, .carrito-resumen select { width: 100%; padding: .55rem; border: 1px solid #ced4da; border-radius: .4rem; }
+.resumen-fila { display: flex; justify-content: space-between; border-bottom: 1px solid #dfe7e3; padding: .55rem 0; }
+.resumen-total { color: #205942; font-size: 1.1rem; font-weight: 700; }
+.carrito-vaciar { justify-self: start; background: none; border: 0; cursor: pointer; }
+.admin-cabecera, .admin-producto { display: flex; justify-content: space-between; gap: 1rem; align-items: center; }
+.admin-form { margin: 1.5rem 0; padding: 1.25rem; border: 1px solid #dfe7e3; border-radius: .9rem; background: #fff; }
+.admin-campos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .8rem; margin: 1rem 0; }
+.admin-campos label { display: grid; gap: .3rem; }
+.admin-campos input, .admin-campos textarea, .form-tarjeta input { padding: .55rem; border: 1px solid #ced4da; border-radius: .4rem; }
+.admin-descripcion { grid-column: 1 / -1; }
+.admin-lista { display: grid; gap: .7rem; }
+.admin-producto { padding: .9rem; background: #fff; border: 1px solid #dfe7e3; border-radius: .7rem; }
+.admin-producto p { color: #5a6b64; margin: .2rem 0 0; }
+.admin-acciones { display: flex; gap: .4rem; }
+@media (max-width: 760px) { .carrito-layout { grid-template-columns: 1fr; } .carrito-resumen { position: static; } }
+@media (max-width: 560px) { .carrito-item, .admin-cabecera, .admin-producto { align-items: stretch; flex-direction: column; } .admin-campos { grid-template-columns: 1fr; } .admin-descripcion { grid-column: auto; } }

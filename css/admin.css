@@ -1,0 +1,159 @@
+/* =========================================================
+   Veterinaria San Marcos - Estilos del panel administrador
+   Reutiliza .card, .btn y .grid de styles.css; aquí solo
+   van los estilos que son propios del admin (sidebar, tablas).
+   ========================================================= */
+
+.admin-layout {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  min-height: 100vh;
+}
+@media (max-width: 780px) {
+  .admin-layout {
+    grid-template-columns: 1fr;
+  }
+  .admin-sidebar {
+    position: static;
+    height: auto;
+  }
+}
+
+.admin-sidebar {
+  background: var(--verde-oscuro);
+  color: #eaf3ee;
+  padding: 1.2rem 0;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+.admin-sidebar .marca {
+  padding: 0 1.2rem 1.2rem;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  margin-bottom: 1rem;
+}
+.admin-sidebar nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.admin-sidebar nav a {
+  display: block;
+  padding: 0.7rem 1.2rem;
+  color: #dcebe3;
+  border-left: 3px solid transparent;
+}
+.admin-sidebar nav a:hover,
+.admin-sidebar nav a[aria-current="page"] {
+  background: rgba(255, 255, 255, 0.08);
+  border-left-color: var(--naranjo);
+  text-decoration: none;
+  color: #fff;
+}
+.admin-sidebar .separador {
+  padding: 0.6rem 1.2rem 0.2rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: #9fc2b0;
+}
+
+.admin-main {
+  padding: 1.6rem 2rem 3rem;
+}
+.admin-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+.admin-topbar h1 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: var(--verde-oscuro);
+}
+
+/* Tarjeta de contenido del admin: mismo componente .card, con relleno interno */
+.admin-main .card {
+  padding: 1.2rem;
+  margin-bottom: 1.4rem;
+}
+
+/* Modificador para las tarjetas de números (usuarios, productos, stock crítico) */
+.card-stat h3 {
+  margin: 0 0 0.3rem;
+  font-size: 0.85rem;
+  color: var(--texto-suave);
+  text-transform: uppercase;
+}
+.card-stat p {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--verde-oscuro);
+}
+
+table.tabla-admin {
+  width: 100%;
+  border-collapse: collapse;
+}
+table.tabla-admin th,
+table.tabla-admin td {
+  text-align: left;
+  padding: 0.7rem 0.6rem;
+  border-bottom: 1px solid var(--borde);
+  font-size: 0.9rem;
+}
+table.tabla-admin th {
+  background: #f0f5f2;
+  color: var(--texto-suave);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.badge-ok {
+  background: #e4f4ec;
+  color: var(--verde-oscuro);
+}
+.badge-alerta {
+  background: #fdecea;
+  color: var(--error);
+}
+
+.acciones-tabla {
+  display: flex;
+  gap: 0.5rem;
+}
+.acciones-tabla a,
+.acciones-tabla button {
+  font-size: 0.82rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid var(--borde);
+  background: #fff;
+  cursor: pointer;
+}
+
+.buscador-admin {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+.buscador-admin input {
+  flex-grow: 1;
+  min-width: 200px;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+}

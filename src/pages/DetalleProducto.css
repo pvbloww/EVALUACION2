@@ -1,0 +1,66 @@
+.producto-migas {
+  color: #5a6b64;
+  font-size: 0.85rem;
+  margin-bottom: 1.2rem;
+}
+
+.producto-migas a {
+  color: #2f7a5f;
+}
+
+.detalle-producto {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.detalle-producto-imagen {
+  aspect-ratio: 1 / 1;
+}
+
+.detalle-producto h1 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+.detalle-producto-codigo {
+  font-size: 0.85rem;
+  color: #5a6b64;
+}
+
+.detalle-producto-precio {
+  font-size: 1.6rem;
+  color: #205942;
+  font-weight: 700;
+}
+
+.detalle-producto-acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1.5rem;
+}
+
+.productos-relacionados {
+  margin-top: 2rem;
+}
+
+.productos-relacionados h2 {
+  color: #205942;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.producto-no-encontrado {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+@media (max-width: 780px) {
+  .detalle-producto {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

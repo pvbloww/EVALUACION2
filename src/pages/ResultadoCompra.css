@@ -1,0 +1,50 @@
+.compra-resultado {
+  max-width: 720px;
+  margin: 2rem auto;
+  padding: 2.5rem 1.5rem;
+  border: 1px solid #dfe7e3;
+  border-radius: 1rem;
+  background: #fff;
+  text-align: center;
+}
+
+.compra-resultado-icono {
+  display: grid;
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto 1rem;
+  place-items: center;
+  border-radius: 50%;
+  background: #eaf3ee;
+  color: #205942;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.compra-resultado-acciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.compra-resultado-resumen {
+  max-width: 460px;
+  margin: 1.5rem auto 0;
+  text-align: left;
+}
+
+.compra-resultado-resumen div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid #dfe7e3;
+}
+
+.compra-resultado-resumen dd {
+  margin: 0;
+  font-weight: 600;
+  text-align: right;
+}

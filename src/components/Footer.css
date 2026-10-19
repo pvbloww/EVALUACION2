@@ -1,0 +1,10 @@
+.footer-sitio { background: #205942; color: #eaf3ee; margin-top: 3rem; }
+.footer-contenido { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(230px, 100%), 1fr)); gap: 1.5rem; padding-top: 2rem; padding-bottom: 2rem; }
+.footer-sitio h2 { color: #fff; font-size: 1.1rem; font-weight: 700; margin-bottom: 0.6rem; }
+.footer-sitio ul { list-style: none; margin: 0; padding: 0; }
+.footer-sitio a { color: #d6e8dd; }
+.footer-final { text-align: center; padding: 0.9rem; font-size: 0.82rem; border-top: 1px solid rgb(255 255 255 / 15%); color: #cfe3d8; }
+.footer-newsletter { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: 0.5rem; }
+.footer-newsletter input { min-width: 0; flex: 1 1 150px; padding: 0.5rem; border-radius: 6px; border: none; }
+.footer-newsletter button { border: 1px solid #d6e8dd; background: #2f7a5f; color: #fff; border-radius: 6px; padding: 0.5rem 0.8rem; }
+.footer-aviso { font-size: 0.85rem; margin-top: 0.75rem; }

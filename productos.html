@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Productos - Veterinaria San Marcos</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">🐾</span>
+        Veterinaria San Marcos
+      </a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="productos.html" aria-current="page">Productos</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="login.html">Iniciar sesión</a>
+        <a href="registro.html">Registrar usuario</a>
+        <a href="carrito.html" class="cart-link">🛒 Cart (<span class="contador-carrito">0</span>)</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <div class="seccion-titulo">
+      <h1>Productos</h1>
+      <p>Vacunas, medicamentos, antiparasitarios y servicios para el cuidado de tu mascota.</p>
+    </div>
+
+    <section aria-label="Filtro de categorías">
+      <div class="filtros" id="filtros-categoria"></div>
+    </section>
+
+    <section aria-label="Listado de productos">
+      <div class="grid" id="grid-productos"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <h4>Veterinaria San Marcos</h4>
+        <p>Rancagua, Región del Libertador Gral. Bernardo O'Higgins.</p>
+      </div>
+      <div>
+        <h4>Enlaces</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Newsletter</h4>
+        <form class="newsletter-form">
+          <label class="sr-only" for="newsletter-correo">Correo electrónico</label>
+          <input type="email" id="newsletter-correo" placeholder="Tu correo" required />
+          <button class="btn btn-primario" type="submit">Unirme</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; <span class="anio-actual"></span> Veterinaria San Marcos. Proyecto académico DSY1104.
+    </div>
+  </footer>
+
+  <script src="js/productos.js"></script>
+  <script src="js/carrito.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

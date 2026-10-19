@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Productos - Panel administrador</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/admin.css" />
+</head>
+<body>
+  <div class="admin-layout">
+    <aside class="admin-sidebar">
+      <div class="marca">🐾 VSM Admin</div>
+      <nav aria-label="Navegación administrador">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li class="separador">Productos</li>
+          <li><a href="productos.html" aria-current="page">Listado de productos</a></li>
+          <li><a href="producto-nuevo.html">Nuevo producto</a></li>
+          <li class="separador">Usuarios</li>
+          <li><a href="usuarios.html">Listado de usuarios</a></li>
+          <li><a href="usuario-nuevo.html">Nuevo usuario</a></li>
+          <li class="separador">&nbsp;</li>
+          <li><a href="../index.html">⟵ Volver a la tienda</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="admin-main">
+      <div class="admin-topbar">
+        <h1>Productos</h1>
+        <a class="btn btn-primario" href="producto-nuevo.html">+ Nuevo producto</a>
+      </div>
+
+      <section class="card">
+        <div class="buscador-admin">
+          <input type="search" id="buscador-productos" placeholder="Buscar por nombre, código o categoría..."
+                 oninput="buscarProductoAdmin(this.value)" />
+        </div>
+
+        <table class="tabla-admin">
+          <thead>
+            <tr>
+              <th>Código</th>
+              <th>Nombre</th>
+              <th>Categoría</th>
+              <th>Precio</th>
+              <th>Stock</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="cuerpo-tabla-productos"></tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <script src="../js/productos.js"></script>
+  <script src="../js/regiones.js"></script>
+  <script src="../js/validaciones.js"></script>
+  <script src="../js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+.productos-pagina {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #23312c;
+  font-family: "Segoe UI", Verdana, Arial, sans-serif;
+  line-height: 1.55;
+}
+
+.productos-titulo {
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+
+.productos-titulo h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.productos-titulo p {
+  color: #5a6b64;
+}
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(230px, 100%), 1fr));
+  gap: 1.2rem;
+}
+
+.catalogo-busqueda { display: grid; gap: .35rem; max-width: 560px; margin: 0 auto 1.25rem; color: #5a6b64; }
+.catalogo-busqueda input { padding: .6rem .8rem; border: 1px solid #dfe7e3; border-radius: .5rem; }
+
+.productos-filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.4rem;
+}
+
+.productos-filtros button {
+  border: 1px solid #dfe7e3;
+  background: #fff;
+  color: #23312c;
+  border-radius: 999px;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.productos-filtros button.activo {
+  background: #2f7a5f;
+  border-color: #2f7a5f;
+  color: #fff;
+}
+
+.productos-filtros button:focus-visible {
+  outline: 3px solid #2f7a5f;
+  outline-offset: 3px;
+}
